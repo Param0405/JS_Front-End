@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaSript</title>
+  <style>
+    *{
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    h1, h2{
+      color: rgb(246, 121, 54);
+      text-align: center;
+    }
+
+    .List{
+      color: rgb(80, 153, 255);
+    }
+
+    .container{
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .BoxModel{
+      border: 2px solid black;
+      padding: 5px;
+      margin: 5px;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Learning JavaScript</h1><hr>
+  </header>
+  <main>
+    <div class="container">
+      <div class="BoxModel">
+        <h2>Query Selector</h2>
+        <ol class="List">
+          <li>GetElementByID</li>
+          <li>GetElementsByClassName</li>
+          <li>QuerySelector</li>
+          <li>QuerySelectorAll</li>
+        </ol>
+      </div>
+
+      <div class="BoxModel">
+        <h2>Script</h2>
+        <ol class="List">
+          <li>Internal</li></t>
+          <p>Internal Script is generally written before ending the body tag because browser engine loads the whole html & CSS and after that JS is loaded as a result website doesn't becomes slow.</p>
+          <li>External</li>
+        </ol>
+      </div>
+
+      <div class="BoxModel">
+        <h2>Naming Convention</h2>
+        <ol class="List">
+          <li>Camel Case</li>
+          <li>Pascal Case</li>
+          <li>Snake Case</li>
+          <li>Kebab Case</li>
+        </ol>
+      </div>
+
+      <div class="BoxModel">
+        <h2>Variables</h2>
+        <ol class="List">
+          <li>const</li>
+          <li>let</li>
+          <li>var</li>
+          <p>Generally, Every Variable is first defined with 'const' and after that it is changed to 'let' as per requirement and 'var' is rarely used.</p>
+        </ol>
+      </div>
+
+      <div class="BoxModel">
+        <h2>If Alternatives</h2>
+        <ol class="List">
+          <li>Ternary operator (_?_:_)</li>
+          <li>Gaurd operator (_||_)</li>
+          <li>Default operator (_??_)</li>
+        </ol>
+      </div>
+
+      <div class="BoxModel">
+        <h2>Functions</h2>
+        <ol class="List">
+          <p>function name(parameters){return}</p>
+          <li>function</li>
+          <li>return statement</li>
+          <p>NOTE: Prefer return statement over global variables.</p>
+          <li>parameters</li>
+        </ol>
+      </div>
+
+      <div class="BoxModel">
+        <h2>Objects</h2>
+        <ol class="List">
+          <li>Objects</li>
+          <p>let name = { key:value };</p>
+          <li>Accessing properties and methods of objects</li>
+          <ul>
+            <li>'.' operator</li>
+            <li>'[]' notation</li>
+          </ul>
+          <li>Inside objects</li>
+          <ul>
+            <li>Nested objects</li>
+            <li>Functions (Methods)</li>
+          </ul>
+          <li>Autoboxing</li>
+          <p>Automatic conversion of primitives to objects</p>
+          <li>Objects are pass by reference while primitives are pass by value</li>
+          <p>'==' compares the references not content</p>
+          <li>Object Destructuring</li>
+          <p>let {keyName} = objectName</p>
+        </ol>
+      </div>
+
+      <div class="BoxModel">
+        <h2>Other Built-In Objects</h2>
+        <ol class="List">
+          <li>JSON (JavaScript Object Notation)</li>
+          <p>Same as JavaScript but key is also a string</p>
+          <ul>
+            <li>JSON.stringify()</li>
+            <li>JSON.parse()</li>
+          </ul>
+          <li>Local Storage</li>
+          <ul>
+            <li>SetItem()</li>
+            <li>GetItem()</li>
+            <li>RemoveItem()</li>
+            <li>Clear()</li>
+          </ul>
+          <li>Date</li>
+          <li>DOM properties and methods</li>
+        </ol>
+      </div>
+
+      <div class="BoxModel">
+        <h2>Arrays and Loops</h2>
+        <ol class="List">
+          <li>Arrays</li>
+          <p>In JavaScript, Arrays can store any values including another arrays</p>
+          <p>let array = [1,'Param', 1.5, 'ReactJS']</p>
+          <li>Array Properties and Methods</li>
+          <ul>
+            <li>isArray()</li>
+            <li>push()/pop()</li>
+            <li>shift()/unshift()</li>
+            <li>splice()</li>
+            <li>toString()</li>
+            <li>sort()</li>
+            <li>valueOf()</li>
+          </ul>
+          <li>Array Destructuring</li>
+          <p>let [a,b,c,d] = arr</p>
+        </ol>
+      </div>
+
+      <div class="BoxModel">
+        <h2>Advance Functions</h2>
+        <ol class="List">
+          <li>Anonymous functions</li>
+          <p>let name = function(parameters){}</p>
+          <ul>
+            <li>Without a name and assigned to variables</li>
+            <li>Like objects, functions are also reference type</li>
+            <li>Passed as arguments to another functions</li>
+          </ul>
+          <li>Arrow functions</li>
+          <p>let name = (parameters) => {return}</p>
+          <li>setTimeout(function, delay in ms)</li>
+          <ul><li>clearTimeout(timerId)</li></ul>
+          <li>setInterval(function, delay in ms)</li>
+          <ul><li>clearInterval(intervalId)</li></ul>
+          <li>AddEventListener</li>
+          <p>let element = document.querySelector('')</p>
+          <p>element.AddEventListener(event,function)</p>
+          <li>Foreach</li>
+          <p>perform action on each element and don't need to break in between</p>
+          <li>Array methods</li>
+          <ul>
+            <li>Map</li>
+            <li>Filter</li>
+          </ul>
+        </ol>
+      </div>
+    </div>
+  </main>
+  <script></script>
+</body>
+</html>
